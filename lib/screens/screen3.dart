@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Section2Screen extends StatelessWidget {
+class Screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final String data = ModalRoute.of(context)!.settings.arguments as String;
     return Scaffold(
-      appBar: AppBar(title: Text('Section 2')),
+      appBar: AppBar(title: Text("Screen 3")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Welcome to Section 2'),
+            Text(data),
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
