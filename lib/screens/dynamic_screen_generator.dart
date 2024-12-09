@@ -8,7 +8,7 @@ class DynamicScreenGenerator extends StatefulWidget {
 class _DynamicScreenGeneratorState extends State<DynamicScreenGenerator> {
   final TextEditingController _controller = TextEditingController();
   List<Widget> _screens = [];
-  final int _maxScreens = 20; // Maksimum jumlah layar
+  final int _maxScreens = 20;
 
   void _generateScreens() {
     final int? numScreens = int.tryParse(_controller.text);
